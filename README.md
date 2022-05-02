@@ -1,0 +1,2 @@
+# ohmynvim
+neovim setup
