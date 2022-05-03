@@ -43,3 +43,4 @@ vim.o.spell = true
 -- 设定单词拼写检查的语言
 vim.o.spelllang = "en_us,cjk"
 
+require("core")
