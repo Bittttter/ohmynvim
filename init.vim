@@ -17,6 +17,8 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 " theme
 Plug 'projekt0n/github-nvim-theme'
+" lsp
+Plug 'neovim/nvim-lspconfig'
 call plug#end()
 
 " plugin setting
