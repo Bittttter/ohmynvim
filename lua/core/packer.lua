@@ -30,7 +30,7 @@ require('packer').startup(function(use)
 	-- search
 	use {
 		'nvim-telescope/telescope.nvim',
-		requires = { {'nvim-lua/plenary.nvim'} }
+		requires = { 'nvim-lua/plenary.nvim' }
 	}
 
 	-- file tree
@@ -47,26 +47,39 @@ require('packer').startup(function(use)
 	-- bottom bar
 	use {
 		'nvim-lualine/lualine.nvim',
-		requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+		requires = {
+			{
+				"SmiteshP/nvim-gps",
+				requires = { "nvim-treesitter/nvim-treesitter" } 
+			},
+			{ 'kyazdani42/nvim-web-devicons', opt = true },
+		},
 		config = function()
-			require("lualine").setup({
+			local gps = require("nvim-gps")
+
+			local function gps_content()
+				if gps.is_available() then
+					return gps.get_location()
+				else
+					return ""
+				end
+			end
+
+			require('lualine').setup({
 				options = {
-					icons_enabled = true,
-					theme = "palenight",
-					disabled_filetypes = {},
 					component_separators = "|",
-					section_separators = { left = "", right = "" },
 				},
 				sections = {
 					lualine_a = { "mode" },
 					lualine_b = { { "branch" }, { "diff" } },
 					lualine_c = {
 						{ "lsp_progress" },
+						{ gps_content, cond = gps.is_available },
 					},
 					lualine_x = {
 						{
 							"diagnostics",
-							sources = { "nvim_diagnostic" },
+							sources = { "coc" },
 							symbols = { error = " ", warn = " ", info = " " },
 						},
 					},
@@ -86,28 +99,7 @@ require('packer').startup(function(use)
 						},
 					},
 					lualine_z = { "progress", "location" },
-				},
-				inactive_sections = {
-					lualine_a = {},
-					lualine_b = {},
-					lualine_c = { "filename" },
-					lualine_x = { "location" },
-					lualine_y = {},
-					lualine_z = {},
-				},
-				tabline = {},
-				extensions = {
-					"quickfix",
-					"nvim-tree",
-					"toggleterm",
-					"fugitive",
-					minimap,
-					aerial,
-					dapui_scopes,
-					dapui_breakpoints,
-					dapui_stacks,
-					dapui_watches,
-				},
+				}
 			})
 		end
 	}
@@ -120,34 +112,13 @@ require('packer').startup(function(use)
 		end
 	}
 
+	-- lsp
 	use {
-		"neovim/nvim-lspconfig",
+		'neoclide/coc.nvim',
+		branch = 'release',
 		config = function()
-			require('lsp.config')
 		end
 	}
-
-	-- 自动安装 LSP
-	use {
-		"williamboman/nvim-lsp-installer",
-		config = function()
-			require('lsp.installer')
-		end
-	}
-
-	use {
-		"tami5/lspsaga.nvim",
-		config = function()
-			require("lsp.saga")
-		end
-	}
-
-	use {
-    "j-hui/fidget.nvim",
-    config = function()
-	    require("fidget").setup()
-    end
-}
 end)
 
 vim.cmd([[

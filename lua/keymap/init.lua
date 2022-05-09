@@ -85,7 +85,7 @@ vim.o.syntax = "enable"
 vim.o.smartcase = true
 
 -- 是否开启单词拼写检查
-vim.o.spell = true
+-- vim.o.spell = true
 
 -- 设定单词拼写检查的语言
-vim.o.spelllang = "en_us,cjk"
+-- vim.o.spelllang = "en_us,cjk"
