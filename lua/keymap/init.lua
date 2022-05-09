@@ -1,28 +1,7 @@
 local KM = {}
 
--- UI
-KM.ui = {}
-
--- lsp
-KM.lsp = {
-	servers = {
-		sumneko_lua = true,
-		tailwindcss = true,
-		tsserver = true,
-		html = true,
-		jsonls = true,
-		cssls = true,
-		volar = true,
-	}
-}
-
--- plugin
-KM.plugins = {
-
-}
-
 KM.mappings = {
-	
+
 }
 
 -- plugins mappings
@@ -45,11 +24,9 @@ KM.mappings.plugins = {
 	}
 }
 
--- 设置文本字符编码
-vim.o.encoding = "utf-8"
-
--- 无操作时，交换文件刷写到磁盘的等待毫秒数
-vim.o.updatetime = 100
+vim.api.nvim_exec(
+[[source ~/.config/nvim/lua/keymap/coc.vim]],
+false)
 
 -- 是否在屏幕最后一行显示命令
 vim.o.showcmd = true
