@@ -119,6 +119,11 @@ require('packer').startup(function(use)
 		config = function()
 		end
 	}
+
+	use {
+		'iamcco/markdown-preview.nvim',
+		run = "cd app && pnpm install",
+	}
 end)
 
 vim.cmd([[

@@ -76,10 +76,15 @@ _G.packer_plugins = {
     url = "https://github.com/neoclide/coc.nvim"
   },
   ["lualine.nvim"] = {
-    config = { "\27LJ\2\nT\0\0\2\1\3\0\f-\0\0\0009\0\0\0B\0\1\2\15\0\0\0X\1\4Ä-\0\0\0009\0\1\0D\0\1\0X\0\2Ä'\0\2\0L\0\2\0K\0\1\0\0¿\5\17get_location\17is_available“\4\1\0\t\0 \00036\0\0\0'\2\1\0B\0\2\0023\1\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\0025\4\6\0005\5\5\0=\5\a\0045\5\t\0005\6\b\0=\6\n\0054\6\3\0005\a\v\0>\a\1\0065\a\f\0>\a\2\6=\6\r\0054\6\3\0005\a\14\0>\a\1\0065\a\16\0>\1\1\a9\b\15\0=\b\17\a>\a\2\6=\6\18\0054\6\3\0005\a\19\0005\b\20\0=\b\21\a5\b\22\0=\b\23\a>\a\1\6=\6\24\0054\6\3\0005\a\25\0>\a\1\0065\a\26\0005\b\27\0=\b\23\a>\a\2\6=\6\28\0055\6\29\0=\6\30\5=\5\31\4B\2\2\0012\0\0ÄK\0\1\0\rsections\14lualine_z\1\3\0\0\rprogress\rlocation\14lualine_y\1\0\3\bdos\tCRLF\tunix\aLF\bmac\aCR\1\2\1\0\15fileformat\18icons_enabled\2\1\3\0\0\rfiletype\rencoding\14lualine_x\fsymbols\1\0\3\tinfo\tÔÅ™ \nerror\tÔÅó \twarn\tÔÅ± \fsources\1\2\0\0\bcoc\1\2\0\0\16diagnostics\14lualine_c\tcond\1\0\0\17is_available\1\2\0\0\17lsp_progress\14lualine_b\1\2\0\0\tdiff\1\2\0\0\vbranch\14lualine_a\1\0\0\1\2\0\0\tmode\foptions\1\0\0\1\0\1\25component_separators\6|\nsetup\flualine\0\rnvim-gps\frequire\0" },
+    config = { "\27LJ\2\nT\0\0\2\1\3\0\f-\0\0\0009\0\0\0B\0\1\2\15\0\0\0X\1\4Ä-\0\0\0009\0\1\0D\0\1\0X\0\2Ä'\0\2\0L\0\2\0K\0\1\0\0¿\5\17get_location\17is_available“\4\1\0\t\0 \00036\0\0\0'\2\1\0B\0\2\0023\1\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\0025\4\6\0005\5\5\0=\5\a\0045\5\t\0005\6\b\0=\6\n\0054\6\3\0005\a\v\0>\a\1\0065\a\f\0>\a\2\6=\6\r\0054\6\3\0005\a\14\0>\a\1\0065\a\16\0>\1\1\a9\b\15\0=\b\17\a>\a\2\6=\6\18\0054\6\3\0005\a\19\0005\b\20\0=\b\21\a5\b\22\0=\b\23\a>\a\1\6=\6\24\0054\6\3\0005\a\25\0>\a\1\0065\a\26\0005\b\27\0=\b\23\a>\a\2\6=\6\28\0055\6\29\0=\6\30\5=\5\31\4B\2\2\0012\0\0ÄK\0\1\0\rsections\14lualine_z\1\3\0\0\rprogress\rlocation\14lualine_y\1\0\3\bdos\tCRLF\tunix\aLF\bmac\aCR\1\2\1\0\15fileformat\18icons_enabled\2\1\3\0\0\rfiletype\rencoding\14lualine_x\fsymbols\1\0\3\nerror\tÔÅó \tinfo\tÔÅ™ \twarn\tÔÅ± \fsources\1\2\0\0\bcoc\1\2\0\0\16diagnostics\14lualine_c\tcond\1\0\0\17is_available\1\2\0\0\17lsp_progress\14lualine_b\1\2\0\0\tdiff\1\2\0\0\vbranch\14lualine_a\1\0\0\1\2\0\0\tmode\foptions\1\0\0\1\0\1\25component_separators\6|\nsetup\flualine\0\rnvim-gps\frequire\0" },
     loaded = true,
     path = "/Users/bitter/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/Users/bitter/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
   },
   ["nord.nvim"] = {
     config = { "\27LJ\2\n4\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\21colorscheme nord\bcmd\bvim\0" },
@@ -139,14 +144,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
-try_loadstring("\27LJ\2\nT\0\0\2\1\3\0\f-\0\0\0009\0\0\0B\0\1\2\15\0\0\0X\1\4Ä-\0\0\0009\0\1\0D\0\1\0X\0\2Ä'\0\2\0L\0\2\0K\0\1\0\0¿\5\17get_location\17is_available“\4\1\0\t\0 \00036\0\0\0'\2\1\0B\0\2\0023\1\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\0025\4\6\0005\5\5\0=\5\a\0045\5\t\0005\6\b\0=\6\n\0054\6\3\0005\a\v\0>\a\1\0065\a\f\0>\a\2\6=\6\r\0054\6\3\0005\a\14\0>\a\1\0065\a\16\0>\1\1\a9\b\15\0=\b\17\a>\a\2\6=\6\18\0054\6\3\0005\a\19\0005\b\20\0=\b\21\a5\b\22\0=\b\23\a>\a\1\6=\6\24\0054\6\3\0005\a\25\0>\a\1\0065\a\26\0005\b\27\0=\b\23\a>\a\2\6=\6\28\0055\6\29\0=\6\30\5=\5\31\4B\2\2\0012\0\0ÄK\0\1\0\rsections\14lualine_z\1\3\0\0\rprogress\rlocation\14lualine_y\1\0\3\bdos\tCRLF\tunix\aLF\bmac\aCR\1\2\1\0\15fileformat\18icons_enabled\2\1\3\0\0\rfiletype\rencoding\14lualine_x\fsymbols\1\0\3\tinfo\tÔÅ™ \nerror\tÔÅó \twarn\tÔÅ± \fsources\1\2\0\0\bcoc\1\2\0\0\16diagnostics\14lualine_c\tcond\1\0\0\17is_available\1\2\0\0\17lsp_progress\14lualine_b\1\2\0\0\tdiff\1\2\0\0\vbranch\14lualine_a\1\0\0\1\2\0\0\tmode\foptions\1\0\0\1\0\1\25component_separators\6|\nsetup\flualine\0\rnvim-gps\frequire\0", "config", "lualine.nvim")
-time([[Config for lualine.nvim]], false)
--- Config for: coc.nvim
-time([[Config for coc.nvim]], true)
-try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0", "config", "coc.nvim")
-time([[Config for coc.nvim]], false)
 -- Config for: nord.nvim
 time([[Config for nord.nvim]], true)
 try_loadstring("\27LJ\2\n4\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\21colorscheme nord\bcmd\bvim\0", "config", "nord.nvim")
@@ -155,10 +152,18 @@ time([[Config for nord.nvim]], false)
 time([[Config for nvim-tree.lua]], true)
 try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
 time([[Config for nvim-tree.lua]], false)
+-- Config for: coc.nvim
+time([[Config for coc.nvim]], true)
+try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0", "config", "coc.nvim")
+time([[Config for coc.nvim]], false)
 -- Config for: nvim-autopairs
 time([[Config for nvim-autopairs]], true)
 try_loadstring("\27LJ\2\n<\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
 time([[Config for nvim-autopairs]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+try_loadstring("\27LJ\2\nT\0\0\2\1\3\0\f-\0\0\0009\0\0\0B\0\1\2\15\0\0\0X\1\4Ä-\0\0\0009\0\1\0D\0\1\0X\0\2Ä'\0\2\0L\0\2\0K\0\1\0\0¿\5\17get_location\17is_available“\4\1\0\t\0 \00036\0\0\0'\2\1\0B\0\2\0023\1\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\0025\4\6\0005\5\5\0=\5\a\0045\5\t\0005\6\b\0=\6\n\0054\6\3\0005\a\v\0>\a\1\0065\a\f\0>\a\2\6=\6\r\0054\6\3\0005\a\14\0>\a\1\0065\a\16\0>\1\1\a9\b\15\0=\b\17\a>\a\2\6=\6\18\0054\6\3\0005\a\19\0005\b\20\0=\b\21\a5\b\22\0=\b\23\a>\a\1\6=\6\24\0054\6\3\0005\a\25\0>\a\1\0065\a\26\0005\b\27\0=\b\23\a>\a\2\6=\6\28\0055\6\29\0=\6\30\5=\5\31\4B\2\2\0012\0\0ÄK\0\1\0\rsections\14lualine_z\1\3\0\0\rprogress\rlocation\14lualine_y\1\0\3\bdos\tCRLF\tunix\aLF\bmac\aCR\1\2\1\0\15fileformat\18icons_enabled\2\1\3\0\0\rfiletype\rencoding\14lualine_x\fsymbols\1\0\3\nerror\tÔÅó \tinfo\tÔÅ™ \twarn\tÔÅ± \fsources\1\2\0\0\bcoc\1\2\0\0\16diagnostics\14lualine_c\tcond\1\0\0\17is_available\1\2\0\0\17lsp_progress\14lualine_b\1\2\0\0\tdiff\1\2\0\0\vbranch\14lualine_a\1\0\0\1\2\0\0\tmode\foptions\1\0\0\1\0\1\25component_separators\6|\nsetup\flualine\0\rnvim-gps\frequire\0", "config", "lualine.nvim")
+time([[Config for lualine.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads
