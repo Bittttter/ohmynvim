@@ -28,6 +28,11 @@ vim.api.nvim_exec(
 [[source ~/.config/nvim/lua/keymap/coc.vim]],
 false)
 
+vim.api.nvim_exec(
+[[source ~/.config/nvim/lua/keymap/telescope.vim]],
+false
+)
+
 -- 是否在屏幕最后一行显示命令
 vim.o.showcmd = true
 
