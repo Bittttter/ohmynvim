@@ -3,3 +3,4 @@ const fetchUser = (id: string) => {
 }
 
 fetchUser('zyw')
+
