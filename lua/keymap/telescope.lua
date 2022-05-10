@@ -1,6 +1,6 @@
 vim.api.nvim_set_keymap(
 'n',
-'<leader>fp',
+'<leader>fw',
 ":lua require'telescope'.extensions.project.project{}<CR>",
 {noremap = true, silent = true}
 )
@@ -14,7 +14,7 @@ vim.api.nvim_set_keymap(
 
 vim.api.nvim_set_keymap(
 'n',
-'<leader>fg',
+'<leader>fp',
 ":Telescope git_files<CR>",
 {noremap = true, silent = true}
 )
@@ -22,6 +22,6 @@ vim.api.nvim_set_keymap(
 vim.api.nvim_set_keymap(
 'n',
 '<leader>ff',
-':DashboardFindFile<CR>',
+"<cmd>lua require('telescope.builtin').live_grep()<cr>",
 {noremap = true, silent = true}
 )
