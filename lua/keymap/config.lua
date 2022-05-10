@@ -30,6 +30,8 @@ vim.g.clipboard = {
 	cache_enabled = 0,
 }
 
+vim.cmd('set foldlevelstart=99')
+vim.cmd('set foldmethod=syntax')
 vim.cmd('set shiftwidth=4')
 vim.cmd('set textwidth=80')
 vim.cmd('set noexpandtab')
